@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 100vh;
+    background: url('images/cook-2364221_1280.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px 0;
+}
+
+.text-center {
+    color: aliceblue;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
