@@ -31,12 +31,16 @@
       <!-- Adding in the hero section with a picture background & heading-->
       <section class="hero text-center">
         <div class="container">
-          <h1 class="text-center">Welcome to the main CS50 Recipes List</h1>  
+          <h1 class="text-center">Welcome to the main CS50 Recipes List</h1> 
+          <!-- Implementing a simple search function using Javascript -->
+          <input type="text" id="searchInput" class="form-control mb-4" placeholder="Search recipes...">
+                
+          <!-- Cards with links to the individual recipes -->
           <div class="row">
             <!-- Recipe 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="images/potatoes-1585060_1280.jpg" class="card-img-top" alt="Recipe 1">
+                    <img src="images/potatoes-1585060_1280.jpg" class="card-img-top" alt="Tasty potato scones">
                     <div class="card-body">
                         <h5 class="card-title">Potato Scones</h5>
                         <p class="card-text">A classic Scottish recipe perfect for breakfast.</p>
@@ -47,16 +51,31 @@
 
             <!-- Recipe 2 -->
             <div class="col-md-4 mb-4">
-                <!-- ... similar structure as Recipe 1 ... -->
+                <div class="card">
+                    <img src="images/waffles-2190961_1280.jpg" class="card-img-top" alt="Image of yummy waffles">
+                    <div class="card-body">
+                        <h5 class="card-title">Waffles</h5>
+                        <p class="card-text">An easy to make waffle mix recipe for that breakfast alternative.</p>
+                        <a href="waffles.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
             </div>
 
             <!-- Recipe 3 -->
             <div class="col-md-4 mb-4">
-                <!-- ... similar structure as Recipe 1 ... -->
+                <div class="card">
+                    <img src="images/food-3539594_1280.jpg" class="card-img-top" alt="Chutney Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Fruit and Veg Chutney</h5>
+                        <p class="card-text">Got too many fruit and veg from this year's harvest?</p>
+                        <a href="chutney.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
             </div>
         </div>
         </div>
       </section>
-
+      <!-- Link to External JavaScript File -->
+      <script src="scripts.js"></script>
     </body>
 </html>
