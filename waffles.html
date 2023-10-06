@@ -34,6 +34,36 @@
           <h1 class="text-center">Waffles</h1>  
           
         </div>
+
+        <div class="row">
+          <!-- Ingredients Column -->
+          <div class="col-md-6">
+              <h3>Ingredients</h3>
+              <h7>Click each ingredient to strike off as required</h7>
+              <ul id="ingredientsList" class="list-group">
+                  <li class="list-group-item" onclick="toggleComplete(this)">1 level cup of plain flour</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">2 tablespoons of granulated sugar</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">1 teaspoon of baking powder</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">1/4 teaspoon of salt</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">1 cup of milk</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">2 large eggs</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">4 tablespoons of unsalted, melted butter</li>
+              </ul>
+          </div>
+          
+          <!-- Method Column -->
+          <div class="col-md-6">
+              <h3>Method</h3>
+              <h7>Click each step to strike off as done</h7>
+              <ul id="methodList">
+                  <li onclick="toggleComplete(this)">1. Peel & boil potatoes</li>
+                  <li onclick="toggleComplete(this)">2. Drain and add butter, salt, pepper and baking powder then mash the Potatos</li>
+                  <li onclick="toggleComplete(this)">3. Add the flour amd mix</li>
+                  <li onclick="toggleComplete(this)">4. Roll out amd flatten to desired thickness use a cutter to portion</li>
+                  <li onclick="toggleComplete(this)">5. Fry each side for 2 - 3 minutes</li>
+              </ul>
+          </div>
+      </div>
       </section>
 
     </body>

@@ -22,3 +22,13 @@ body {
 .completed {
     text-decoration: line-through;
 }
+
+.list-group-item {
+    background-color: transparent;
+    color: aliceblue;
+}
+
+#methodList, #ingredientsList {
+    list-style-type: none;
+    padding-left: 0;
+}
