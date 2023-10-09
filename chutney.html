@@ -5,7 +5,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
-        <title>Recipes Main Page</title>
+        <title>Chutney Recipe</title>
     </head>
     <body>
         <!-- Navigation bar that should be static across all pages -->
@@ -31,10 +31,46 @@
       <!-- Adding in the hero section with a picture background & heading-->
       <section class="hero text-center">
         <div class="container">
-          <h1 class="text-center">Waffles</h1>  
+          <h1 class="text-center">Fruit and Veg Chutney</h1>  
           
         </div>
-      </section>
 
+        <div class="row">
+          <!-- Ingredients Column -->
+          <div class="col-md-6">
+              <h3>Ingredients</h3>
+              <h7>Click each ingredient to strike off as required</h7>
+              <ul id="ingredientsList" class="list-group">
+                  <li class="list-group-item" onclick="toggleComplete(this)">1kg of Fruit & Veg of your choosing</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">500g White onion</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">2 cloves of garlic</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">2in Piece of ginger OR 2tbsp Ginger puree</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">100g Sultanas</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">Dried chilli flakes to taste</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">500ml Distilled malt vinegar</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">250g Brown sugar</li>
+                  <li class="list-group-item" onclick="toggleComplete(this)">1 1/2 tsp of salt</li>
+              </ul>
+          </div>
+          
+          <!-- Method Column -->
+          <div class="col-md-6">
+              <h3>Method</h3>
+              <h7>Click each step to strike off as done</h7>
+              <ul id="methodList">
+                  <li onclick="toggleComplete(this)">1. Roughly chop the fruit & veg</li>
+                  <li onclick="toggleComplete(this)">2. Finely chop the onion, garlic and ginger</li>
+                  <li onclick="toggleComplete(this)">3. Place all ingredients im a saucepan on a medium heat until the sugar is dissolved</li>
+                  <li onclick="toggleComplete(this)">4. Once sugar is dissolved bring to the boil then reduce heat to a simmer</li>
+                  <li onclick="toggleComplete(this)">5. Simmer for minimum of 1hr stirrimg every so often</li>
+                  <li onclick="toggleComplete(this)">6. The chutney will be ready when you can scrape a wooden spoon across the bottom of the pan and it will not flow into the gap</li>
+                  <li onclick="toggleComplete(this)">7. Spoon chutney into clean glass jars and seal while hot</li>
+                  <li onclick="toggleComplete(this)">8. Store in a cool dark cupboard for at least a month to let the flavours fuse</li>
+              </ul>
+          </div>
+      </div>
+      </section>
+      <!-- Link to External JavaScript File -->
+      <script src="scripts.js"></script>
     </body>
 </html>
